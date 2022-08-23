@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}INDEX {% endblock %}
+
+{% block main %}
+    <form class="formlogin" method="POST" action="valida">
+        <input class="input" type="text" name="name" placeholder="User Name">
+        <input class="input" type="password" name="password" placeholder="Password">
+        <input class="input" type="submit" name="submit" value="Submit">
+
+    </form>
+
+    <div id="img-login">
+        <img src="./static/imagens/login.jpg" id="login">
+    </div>
+{% endblock %}

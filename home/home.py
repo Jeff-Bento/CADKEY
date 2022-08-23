@@ -1,9 +1,12 @@
-from flask import Blueprint
-from flask import Flask, render_template, session, redirect
+from flask import Blueprint, session, abort
 
 
-home_bp = Blueprint('home',__name__, template_folder='./templates',static_folder='./static')
+home_bp = Blueprint('home',__name__)
 
-@home_bp.route('/')
-def index():
-    return "Pagina Python"
+@home_bp.route('/home/')
+def home():
+    if session:
+        print(session)
+        return '<h1> Minha Pagina Home </h1> <br> <a href="/logout">Logout </a>'
+    else:
+        return abort(404,"Page Not Found")

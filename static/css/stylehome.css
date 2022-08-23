@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-row-gap: 5px;
+    width: 60vw;
+}
+
+header{
+    height: 100%;
+    background-color: rgb(37, 36, 37);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+}
+
+nav{
+    background-color: rgb(254, 233, 7);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 73, 146);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+
+}
+
+.formlogin{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.input{
+    height: 5vh;
+    width: 15vw;
+    margin-top: 5px;
+    border-radius: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+#img-login{
+    
+}
+
+#login{
+height: 16vh;
+margin-left: 20px;
+}
+
+footer{
+    
+    background-color: rgb(37, 36, 37);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 10vh;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#logotipo{
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    width: 20%;
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="./static/css/stylehome.css">
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logotipo">
+                <img src="./static/imagens/logo1.png" id="logo">
+            </div>
+        </header>
+
+        <nav>
+            Links navegação
+        </nav>
+
+        <main>
+            {% block main %}
+            Corpo da pagina
+            {% endblock %}
+            
+        </main>
+
+        <footer>
+            roda pe da pagina
+        </footer>
+    </div>
+
+</body>
+</body>
+</html>
